@@ -20,7 +20,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: emailservice
-          image: otel/demo:VERSION_TO_REPLACE-emailservice
+          image: otel/demo:v0.5.0-alpha-emailservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -97,7 +97,7 @@ spec:
     spec:
       containers:
         - name: checkoutservice
-          image: otel/demo:VERSION_TO_REPLACE-checkoutservice
+          image: otel/demo:v0.5.0-alpha-checkoutservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -185,7 +185,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: recommendationservice
-          image: otel/demo:VERSION_TO_REPLACE-recommendationservice
+          image: otel/demo:v0.5.0-alpha-recommendationservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -268,7 +268,7 @@ spec:
         - name: frontend
           # both look good
           #image: registry.lab.dynatrace.org/cloudplatform/hipster-shop-frontend
-          image: otel/demo:VERSION_TO_REPLACE-frontend
+          image: otel/demo:v0.5.0-alpha-frontend
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -349,7 +349,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host :  "demo.IP_TO_REPLACE.nip.io"
+    - host :  "demo.172.19.0.7.nip.io"
       http:
         paths:
           - pathType: ImplementationSpecific
@@ -382,7 +382,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: paymentservice
-          image: otel/demo:VERSION_TO_REPLACE-paymentservice
+          image: otel/demo:v0.5.0-alpha-paymentservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -459,7 +459,7 @@ spec:
       containers:
         - name: productcatalogservice
           # image: registry.lab.dynatrace.org/cloudplatform/hipster-shop-productcatalogservice
-          image: otel/demo:VERSION_TO_REPLACE-productcatalogservice
+          image: otel/demo:v0.5.0-alpha-productcatalogservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -537,7 +537,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: cartservice
-          image: otel/demo:VERSION_TO_REPLACE-cartservice
+          image: otel/demo:v0.5.0-alpha-cartservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -618,7 +618,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: loadgeneratorservice
-          image: otel/demo:VERSION_TO_REPLACE-loadgenerator
+          image: otel/demo:v0.5.0-alpha-loadgenerator
           imagePullPolicy: Always
           ports:
             - name: locust
@@ -707,7 +707,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: currencyservice
-          image: otel/demo:VERSION_TO_REPLACE-currencyservice
+          image: otel/demo:v0.5.0-alpha-currencyservice
           imagePullPolicy: Always
           ports:
             - name: grpc
@@ -783,7 +783,7 @@ spec:
     spec:
       containers:
         - name: shippingservice
-          image: otel/demo:VERSION_TO_REPLACE-shippingservice
+          image: otel/demo:v0.5.0-alpha-shippingservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -951,7 +951,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: adservice
-          image: otel/demo:VERSION_TO_REPLACE-adservice
+          image: otel/demo:v0.5.0-alpha-adservice
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -1028,7 +1028,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: featureflagservice
-          image: otel/demo:VERSION_TO_REPLACE-featureflagservice
+          image: otel/demo:v0.5.0-alpha-featureflagservice
           imagePullPolicy: Always
           ports:
             - name: grpc
@@ -1194,7 +1194,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
         - name: quoteservice
-          image: otel/demo:VERSION_TO_REPLACE-quoteservice
+          image: otel/demo:v0.5.0-alpha-quoteservice
           imagePullPolicy: Always
           ports:
             - name: quote
