@@ -1,0 +1,9 @@
+USER-SUPPLIED VALUES:
+config:
+  dev:
+    fake-cpu-meter:
+      enabled: true
+env:
+  KEPLER_FAKE_CPU_METER: true
+serviceMonitor:
+  enabled: true
